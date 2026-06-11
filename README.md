@@ -24,3 +24,7 @@ Features:
 - Digital Evidence Storage
 - Digital Evidence Analysis
 - Digital Evidence Reporting
+
+## License
+
+This project is released for academic and research purposes.

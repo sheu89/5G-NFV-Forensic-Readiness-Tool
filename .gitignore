@@ -1,32 +1,91 @@
+# =========================
+# Operating System Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Visual Studio Code
+# =========================
+.vscode/
+
+# =========================
 # Python
+# =========================
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+*.pyd
 
 # Virtual environments
 venv/
 .env/
 
-# VS Code
-.vscode/
-
+# =========================
 # Logs
+# =========================
 *.log
+logs/
 
-# Elastic
-data/
-
-# OpenStack
-*.qcow2
-*.img
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# Temporary files
+# =========================
+# Temporary Files
+# =========================
 tmp/
 temp/
+*.tmp
 
-# Large archives
+# =========================
+# Archives
+# =========================
 *.zip
+*.tar
 *.tar.gz
+*.rar
+*.7z
+
+# =========================
+# OpenStack Images
+# =========================
+*.qcow2
+*.img
+*.iso
+
+# =========================
+# Docker
+# =========================
+*.pid
+
+# =========================
+# Elastic Stack Data
+# =========================
+data/
+elasticsearch/data/
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Terraform
+# =========================
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# =========================
+# Secrets (never commit)
+# =========================
+*.pem
+*.key
+*.crt
+*.p12
+.env.local
+.env.production
+.env.development
+
+# =========================
+# Swap Files
+# =========================
+*.swp
+*.swo
