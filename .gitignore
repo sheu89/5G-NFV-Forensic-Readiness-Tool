@@ -89,3 +89,10 @@ elasticsearch/data/
 # =========================
 *.swp
 *.swo
+
+# Generated forensic reports
+detection/reports/evidence/*.json
+detection/reports/pdf/*.pdf
+
+# Large ML models
+detection/models/rf_model.joblib

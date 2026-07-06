@@ -23,7 +23,6 @@ Features:
 - Digital Evidence Preservation
 - Digital Evidence Storage
 - Digital Evidence Analysis
-- Digital Evidence Reporting
 
 ## License
 

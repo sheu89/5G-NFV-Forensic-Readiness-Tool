@@ -1,0 +1,38 @@
+version: "3.9"
+
+services:
+
+  detection-api:
+
+    build:
+      context: ./api
+
+    container_name: 5gdfrt-api
+
+    ports:
+      - "8000:8000"
+
+    volumes:
+      - ./api:/app
+      - ./models:/app/models
+      - ./reports:/app/reports
+
+    restart: unless-stopped
+
+  dashboard:
+
+    build:
+      context: ./dashboard
+
+    container_name: 5gdfrt-dashboard
+
+    ports:
+      - "3000:3000"
+
+    depends_on:
+      - detection-api
+
+    volumes:
+      - ./dashboard:/app
+
+    restart: unless-stopped
